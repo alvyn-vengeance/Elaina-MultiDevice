@@ -294,11 +294,11 @@ export async function handler(chatUpdate) {
                 if (!('antiLink' in chat))
                     chat.antiLink = false
                 if (!('viewonce' in chat))
-                    chat.viewonce = false
+                    chat.viewonce = true
                 if (!('antiToxic' in chat))
-                    chat.antiToxic = false
+                    chat.antiToxic = true
                 if (!('simi' in chat))
-                    chat.simi = false
+                    chat.simi = true
                 if (!('nsfw' in chat))
                     chat.nsfw = false
                 if (!('premium' in chat))
@@ -320,9 +320,9 @@ export async function handler(chatUpdate) {
                     sDemote: '',
                     delete: true,
                     antiLink: false,
-                    viewonce: false,
+                    viewonce: true,
                     antiToxic: true,
-                    simi: false,
+                    simi: true,
                     expired: 0,
                     nsfw: false,
                     premium: false,
